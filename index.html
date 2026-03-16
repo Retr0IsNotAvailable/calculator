@@ -8,9 +8,49 @@
     <title>Calculator</title>
 
     <link href="./styles/general.css" rel="stylesheet"/>
+    <link href="./styles/container.css" rel="stylesheet"/>
+    <link href="./styles/calculator.css" rel="stylesheet"/>
   </head>
   <body>
-
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div>
+            <input type="text" name="display"/>
+          </div>
+          <div>
+            <input type="button" name="erease" value="AC"/>
+            <input type="button" name="delete" value="DE"/>
+            <input type="button" name="modulus" value="%"/>
+            <input type="button" name="divide" value="/"/>
+          </div>
+          <div>
+            <input type="button" name="seven" value="7"/>
+            <input type="button" name="eight" value="8"/>
+            <input type="button" name="nine" value="9"/>
+            <input type="button" name="multiply" value="x"/>
+          </div>
+          <div>
+            <input type="button" name="four" value="4"/>
+            <input type="button" name="five" value="5"/>
+            <input type="button" name="six" value="6"/>
+            <input type="button" name="substract" value="-"/>
+          </div>
+          <div>
+            <input type="button" name="one" value="1"/>
+            <input type="button" name="two" value="2"/>
+            <input type="button" name="six" value="3"/>
+            <input type="button" name="add" value="+"/>
+          </div>
+          <div>
+            <input type="button" name="sign" value="+/-"/>
+            <input type="button" name="zero" value="0"/>
+            <input type="button" name="dot" value="."/>
+            <input type="button" name="equal" value="="/>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
