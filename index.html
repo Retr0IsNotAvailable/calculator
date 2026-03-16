@@ -20,33 +20,34 @@
             <input type="text" name="display"/>
           </div>
           <div>
-            <input type="button" name="erease" value="AC"/>
-            <input type="button" name="delete" value="DE"/>
-            <input type="button" name="modulus" value="%"/>
-            <input type="button" name="divide" value="/"/>
+            <input type="button" name="erease" value="AC" onclick="display.value = ''"/>
+            <input type="button" name="delete" value="DE" onclick="
+              display.value = (display.value).toString().slice(0, -1)"/>
+            <input type="button" name="modulus" value="%" onclick="display.value += '%'"/>
+            <input type="button" name="divide" value="/" onclick="display.value += '/'"/>
           </div>
           <div>
-            <input type="button" name="seven" value="7"/>
-            <input type="button" name="eight" value="8"/>
-            <input type="button" name="nine" value="9"/>
-            <input type="button" name="multiply" value="x"/>
+            <input type="button" name="seven" value="7" onclick="display.value += '7'"/>
+            <input type="button" name="eight" value="8" onclick="display.value += '8'"/>
+            <input type="button" name="nine" value="9" onclick="display.value += '9'"/>
+            <input type="button" name="multiply" value="*" onclick="display.value += '*'"/>
           </div>
           <div>
-            <input type="button" name="four" value="4"/>
-            <input type="button" name="five" value="5"/>
-            <input type="button" name="six" value="6"/>
-            <input type="button" name="substract" value="-"/>
+            <input type="button" name="four" value="4" onclick="display.value += '4'"/>
+            <input type="button" name="five" value="5" onclick="display.value += '5'"/>
+            <input type="button" name="six" value="6" onclick="display.value += '6'"/>
+            <input type="button" name="substract" value="-" onclick="display.value += '-'"/>
           </div>
           <div>
-            <input type="button" name="one" value="1"/>
-            <input type="button" name="two" value="2"/>
-            <input type="button" name="six" value="3"/>
-            <input type="button" name="add" value="+"/>
+            <input type="button" name="one" value="1" onclick="display.value += '1'"/>
+            <input type="button" name="two" value="2" onclick="display.value += '2'"/>
+            <input type="button" name="six" value="3" onclick="display.value += '3'"/>
+            <input type="button" name="add" value="+" onclick="display.value += '+'"/>
           </div>
           <div>
-            <input type="button" name="sign" value="+/-"/>
-            <input type="button" name="zero" value="0"/>
-            <input type="button" name="dot" value="."/>
+            <input type="button" name="sign" value="00" onclick="display.value += '00'"/>
+            <input type="button" name="zero" value="0" onclick="display.value += '0'"/>
+            <input type="button" name="dot" value="." onclick="display.value += '.'"/>
             <input type="button" name="equal" value="="/>
           </div>
         </form>
