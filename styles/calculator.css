@@ -17,3 +17,7 @@
   color: #fff;
   margin: 0.62rem;
 }
+
+form input.operator {
+  color: #33ffd8;
+}
